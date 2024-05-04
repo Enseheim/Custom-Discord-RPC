@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>360</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>360</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Custom DRPC</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="accessibleDescription">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="windowFilePath">
+   <string/>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	background-color: #313338;
+}
+
+
+QLineEdit {
+	color: white;
+	border-radius: 4px;
+	border: 1px solid #5865f2;
+	padding: 5px 15px;
+}
+
+
+QLineEdit:hover {
+	background: #4853c7;
+	border: 1px solid #5865f2;
+}
+
+
+QPushButton {
+	color: white;
+	background-color: #4e5058;
+	border: none;
+	border-radius: 4px
+}
+
+
+QPushButton:hover {
+	background: #6d6f78;
+}</string>
+   </property>
+   <widget class="QLineEdit" name="line_id">
+    <property name="geometry">
+     <rect>
+      <x>189</x>
+      <y>40</y>
+      <width>161</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>APPLICATION ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_state">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>STATE TEXT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="devportal">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>130</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DEVELOPER PORTAL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closehint">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>7</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>✕</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minimizedhint">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>7</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>−</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="discordbtn">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>7</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="idupdater">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
