@@ -13,19 +13,19 @@
     <x>0</x>
     <y>0</y>
     <width>360</width>
-    <height>150</height>
+    <height>184</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>360</width>
-    <height>150</height>
+    <height>184</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>360</width>
-    <height>150</height>
+    <height>184</height>
    </size>
   </property>
   <property name="font">
@@ -53,6 +53,23 @@
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMenu {
+    background-color: #111214;
+	color: #9ca1a7;
+	padding: 5px 5px;
+	border: 1px solid #111214;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+	background-color: #505cdc;
+	color: white;
+	padding: 5px 5px;
+	border: 1px solid #505cdc;
+    border-radius: 4px;
+}</string>
+  </property>
   <property name="windowFilePath">
    <string/>
   </property>
@@ -66,9 +83,20 @@
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">QWidget {
 	background-color: #313338;
+}
+
+
+QLabel {
+	color: #757e8a;
 }
 
 
@@ -96,6 +124,24 @@ QPushButton {
 
 QPushButton:hover {
 	background: #6d6f78;
+}
+
+
+QMenu {
+    background-color: #111214;
+	color: #9ca1a7;
+	padding: 5px 5px;
+	border: 1px solid #111214;
+    border-radius: 4px;
+}
+
+
+QMenu::item:selected {
+	background-color: #505cdc;
+	color: white;
+	padding: 5px 5px;
+	border: 1px solid #505cdc;
+    border-radius: 4px;
 }</string>
    </property>
    <widget class="QLineEdit" name="line_id">
@@ -139,7 +185,7 @@ QPushButton:hover {
       <x>10</x>
       <y>40</y>
       <width>130</width>
-      <height>70</height>
+      <height>110</height>
      </rect>
     </property>
     <property name="text">
@@ -196,6 +242,48 @@ QPushButton:hover {
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="icon_name_line">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>120</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>RPC IMAGE NAME</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="githubbtn">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>7</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="build_ver">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>7</y>
+      <width>230</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dev Build</string>
     </property>
    </widget>
   </widget>
