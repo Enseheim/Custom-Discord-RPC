@@ -25,12 +25,12 @@ class DRPC(QMainWindow):
 
         self.start = time.time()
 
-        loadUi('main.ui', self)
+        loadUi('assets/ui/main.ui', self)
 
-        self.discordbtn.setIcon(QIcon('discord.svg'))
+        self.discordbtn.setIcon(QIcon('assets/icons/discord.svg'))
         self.discordbtn.setIconSize(QSize(18, 18))
 
-        self.idupdater.setIcon(QIcon('reload.svg'))
+        self.idupdater.setIcon(QIcon('assets/icons/reload.svg'))
         self.idupdater.setIconSize(QSize(18, 18))
 
 
